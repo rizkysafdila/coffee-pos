@@ -23,7 +23,31 @@ export default defineNuxtConfig({
   },
 
   imports: {
-    dirs: ['./api', './stores'],
+    dirs: [
+      './api',
+
+      './stores',
+
+      // Composables
+      'composables',
+      'composables/*/index.{ts,js,mjs,mts}',
+      'composables/**',
+
+      // Constants
+      'constants',
+      'constants/*/index.{ts,js,mjs,mts}',
+      'constants/**',
+
+      // Types
+      'types',
+      'types/*/index.{ts,js,mjs,mts}',
+      'types/**',
+
+      // Utils
+      'utils',
+      'utils/*/index.{ts,js,mjs,mts}',
+      'utils/**',
+    ],
   },
 
   // https://gitsindonesia.github.io/ui-component/

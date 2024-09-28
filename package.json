@@ -96,6 +96,13 @@
     "vitest-environment-nuxt": "^1.0.0",
     "vitest-sonar-reporter": "^2.0.0"
   },
+  "pnpm": {
+    "overrides": {
+      "@babel/plugin-proposal-class-properties": "npm:@babel/plugin-transform-class-properties",
+      "@babel/plugin-proposal-optional-chaining": "npm:@babel/plugin-transform-optional-chaining",
+      "@babel/plugin-proposal-nullish-coalescing-operator": "npm:@babel/plugin-transform-nullish-coalescing-operator"
+    }
+  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,html,css,vue}": "npm run lint:fix"
   },
@@ -103,12 +110,5 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
-  },
-  "pnpm": {
-    "overrides": {
-      "@babel/plugin-proposal-class-properties": "npm:@babel/plugin-transform-class-properties",
-      "@babel/plugin-proposal-optional-chaining": "npm:@babel/plugin-transform-optional-chaining",
-      "@babel/plugin-proposal-nullish-coalescing-operator": "npm:@babel/plugin-transform-nullish-coalescing-operator"
-    }
   }
 }
