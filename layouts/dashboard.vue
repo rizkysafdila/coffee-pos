@@ -17,7 +17,6 @@ function miniToggle(): void {
     <!-- navbar -->
     <template #navigation>
       <VAppBar
-        v-if="isMobile"
         class="flex justify-between items-center !py-8"
         sticky
         bordered
@@ -38,6 +37,7 @@ function miniToggle(): void {
       <VNavDrawer
         v-model="isAsideOpen"
         v-model:mini="isMini"
+        :sticky="!isMobile"
         :fixed="isMobile"
         :overlay="isMobile"
         :close-on-overlay-click="isMobile"

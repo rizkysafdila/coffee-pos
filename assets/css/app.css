@@ -161,3 +161,27 @@ body {
   --v-tabs-slider-bg-color: var(--color-primary-500);
   --v-tabs-slider-border-color: var(--color-primary-500);
  }
+
+ /* Button */
+ .btn-spice {
+  --btn-bg-color: theme('colors.spice.700');
+  --btn-border-color: theme('colors.spice.700');
+  --btn-text-color: theme('colors.white');
+}
+.btn-spice:hover {
+  --btn-bg-color: theme('colors.spice.800');
+  --btn-border-color: theme('colors.spice.800');
+}
+
+/* Pagination */
+.v-pagination{
+  gap: 4px !important;
+}
+.v-pagination-item{
+  border-radius: 8px;
+}
+.v-pagination-item--active, .v-pagination-item--active:hover {
+  --v-pagination-item-bg-color: theme('colors.spice.700') !important;
+  --v-pagination-item-border-color: theme('colors.spice.700') !important;
+  --v-pagination-item-text-color: var(--v-pagination-item-active-text-color);
+}

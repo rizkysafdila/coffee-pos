@@ -6,6 +6,7 @@ definePageMeta({
 
 <template>
   <div>
-    <VText>Dashboard Page</VText>
+    <PageTitle title="Dashboard Page" class="mb-8" />
+    <WeatherForecast />
   </div>
 </template>

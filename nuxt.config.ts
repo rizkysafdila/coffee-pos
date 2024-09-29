@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       gaId: '',
-      apiUrl: '',
+      apiUrl: 'http://localhost:1337/api',
       appUrl: '',
     },
   },

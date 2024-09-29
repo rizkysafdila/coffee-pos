@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { ISidebarProps } from './type'
+import type { ISidebarProps } from './Sidebar.type'
 
 defineProps<ISidebarProps>()
 

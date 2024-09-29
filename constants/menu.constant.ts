@@ -7,6 +7,11 @@ export const SIDEBAR_MENU_ITEMS = ref([
         to: 'home',
         prependIcon: 'tabler:layout-grid',
       },
+      {
+        title: 'Orders',
+        to: 'orders',
+        prependIcon: 'mingcute:bill-2-line',
+      },
     ],
   },
   {
